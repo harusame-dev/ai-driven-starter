@@ -1,0 +1,26 @@
+{
+  "name": "@packages/supabase",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    "./nextjs/server": "./src/nextjs/server.ts",
+    "./nextjs/client": "./src/nextjs/client.ts",
+    "./nextjs/proxy": "./src/nextjs/proxy.ts"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  },
+  "peerDependencies": {
+    "next": ">=16"
+  },
+  "dependencies": {
+    "@supabase/ssr": "catalog:",
+    "@supabase/supabase-js": "catalog:"
+  },
+  "devDependencies": {
+    "@types/node": "catalog:",
+    "next": "catalog:",
+    "typescript": "catalog:"
+  }
+}

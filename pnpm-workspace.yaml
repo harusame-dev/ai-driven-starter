@@ -1,0 +1,39 @@
+packages:
+  - apps/*
+  - packages/*
+
+# パッケージ公開から 14 日（= 20160 分）経過していないバージョンのインストールを禁止
+minimumReleaseAge: 20160
+
+# exact version（^ / ~ なし）で package.json に記録する
+savePrefix: ""
+
+allowBuilds:
+  core-js-pure: false
+  dtrace-provider: false
+  re2: false
+  sharp: false
+  unrs-resolver: false
+
+ignoredBuiltDependencies:
+  - sharp
+  - unrs-resolver
+
+catalogMode: strict
+
+catalog:
+  next: 16.2.9
+  react: 19.2.4
+  react-dom: 19.2.4
+  "@tailwindcss/postcss": 4.3.1
+  "@types/node": 20.19.43
+  "@types/react": 19.2.17
+  "@types/react-dom": 19.2.3
+  eslint: 9.39.4
+  eslint-config-next: 16.2.9
+  tailwindcss: 4.3.1
+  typescript: 5.9.3
+  "@types/bun": 1.3.14
+  renovate: 43.244.4
+  '@supabase/ssr': 0.12.0
+  '@supabase/supabase-js': 2.108.2
