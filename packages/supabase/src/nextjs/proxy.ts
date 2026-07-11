@@ -1,14 +1,14 @@
 import { createServerClient } from "@supabase/ssr";
 import { NextResponse, type NextRequest } from "next/server";
 
-import { getSupabaseEnv } from "./env";
+import { getSupabasePublicConfig } from "./public-config";
 
 export function createClient(request: NextRequest) {
-  const { url, key } = getSupabaseEnv();
+  const { url, publicKey } = getSupabasePublicConfig();
 
   let supabaseResponse = NextResponse.next({ request });
 
-  const supabase = createServerClient(url, key, {
+  const supabase = createServerClient(url, publicKey, {
     cookies: {
       getAll() {
         return request.cookies.getAll();

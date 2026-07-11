@@ -6,7 +6,9 @@
   "exports": {
     "./nextjs/server": "./src/nextjs/server.ts",
     "./nextjs/client": "./src/nextjs/client.ts",
-    "./nextjs/proxy": "./src/nextjs/proxy.ts"
+    "./nextjs/proxy": "./src/nextjs/proxy.ts",
+    "./nextjs/public-config": "./src/nextjs/public-config.ts",
+    "./nextjs/private-config": "./src/nextjs/private-config.ts"
   },
   "scripts": {
     "dev": "supabase start --workdir ..",
@@ -17,7 +19,8 @@
   },
   "dependencies": {
     "@supabase/ssr": "catalog:",
-    "@supabase/supabase-js": "catalog:"
+    "@supabase/supabase-js": "catalog:",
+    "valibot": "catalog:"
   },
   "devDependencies": {
     "@types/node": "catalog:",

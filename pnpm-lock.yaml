@@ -253,6 +253,9 @@ catalogs:
     typescript:
       specifier: 6.0.3
       version: 6.0.3
+    valibot:
+      specifier: 1.4.1
+      version: 1.4.1
 
 importers:
 
@@ -320,6 +323,9 @@ importers:
       '@supabase/supabase-js':
         specifier: 'catalog:'
         version: 2.108.2
+      valibot:
+        specifier: 'catalog:'
+        version: 1.4.1(typescript@6.0.3)
     devDependencies:
       '@types/node':
         specifier: 'catalog:'
@@ -4155,6 +4161,14 @@ packages:
   url-join@5.0.0:
     resolution: {integrity: sha512-n2huDr9h9yzd6exQVnH/jU5mr+Pfx08LRXXZhkLLetAMESRj+anQsTAh940iMrIetKAmry9coFuZQ2jY8/p3WA==}
     engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
+
+  valibot@1.4.1:
+    resolution: {integrity: sha512-klCmFTz2jeDluy9RwX+F884TCiogtdBJ/YaxSx1EOBYXa3NXNWj8kR1jjN8rzluwojJVWWaHJ4r1U5LfICnM3g==}
+    peerDependencies:
+      typescript: '>=5'
+    peerDependenciesMeta:
+      typescript:
+        optional: true
 
   validate-npm-package-name@5.0.0:
     resolution: {integrity: sha512-YuKoXDAhBYxY7SfOKxHBDoSyENFeW5VvIIQp2TGQuit8gpK6MnWaQelBKxso72DoxTZfZdcP3W90LqpSkgPzLQ==}
@@ -8917,6 +8931,10 @@ snapshots:
       punycode: 2.3.1
 
   url-join@5.0.0: {}
+
+  valibot@1.4.1(typescript@6.0.3):
+    optionalDependencies:
+      typescript: 6.0.3
 
   validate-npm-package-name@5.0.0:
     dependencies:
