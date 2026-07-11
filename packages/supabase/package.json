@@ -9,6 +9,7 @@
     "./nextjs/proxy": "./src/nextjs/proxy.ts"
   },
   "scripts": {
+    "dev": "supabase start --workdir ..",
     "typecheck": "tsc --noEmit"
   },
   "peerDependencies": {
