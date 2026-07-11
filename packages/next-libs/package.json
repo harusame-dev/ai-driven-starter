@@ -1,0 +1,19 @@
+{
+  "name": "@packages/next-libs",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    "./next-config": "./src/next-config.ts"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  },
+  "peerDependencies": {
+    "next": ">=16"
+  },
+  "devDependencies": {
+    "next": "catalog:",
+    "typescript": "catalog:"
+  }
+}
