@@ -10,10 +10,6 @@
             "type": "command"
           },
           {
-            "command": "entire hooks claude-code session-start",
-            "type": "command"
-          },
-          {
             "command": "bun \"${CLAUDE_PROJECT_DIR:-.}/.claude/hooks/copy-env-sample.ts\"",
             "type": "command",
             "statusMessage": ".env.sample から .env をセットアップ中..."
