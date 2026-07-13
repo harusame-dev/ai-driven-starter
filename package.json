@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "dev:web": "turbo run dev --filter=@apps/web",
+    "dev:web": "WORKTREE_NAME=$(basename $PWD) turbo run dev --filter=@apps/web",
+    "dev:portless:web": "WORKTREE_NAME=$(basename $PWD) SUPABASE_API_PORT=$(for p in $(seq 54321 54398); do lsof -nP -iTCP:$p -sTCP:LISTEN >/dev/null 2>&1 || { echo $p; break; }; done) SUPABASE_DB_PORT=$(for p in $(seq 54400 54498); do lsof -nP -iTCP:$p -sTCP:LISTEN >/dev/null 2>&1 || { echo $p; break; }; done) turbo run dev:portless --filter @apps/web",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "packageManager": "pnpm@11.10.0",
@@ -21,6 +22,7 @@
   "devDependencies": {
     "@types/bun": "catalog:",
     "@types/node": "catalog:",
+    "portless": "catalog:",
     "turbo": "catalog:"
   },
   "dependencies": {

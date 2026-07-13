@@ -235,6 +235,9 @@ catalogs:
     next:
       specifier: 16.2.9
       version: 16.2.9
+    portless:
+      specifier: 0.15.0
+      version: 0.15.0
     react:
       specifier: 19.2.4
       version: 19.2.4
@@ -271,6 +274,9 @@ importers:
       '@types/node':
         specifier: 'catalog:'
         version: 20.19.43
+      portless:
+        specifier: 'catalog:'
+        version: 0.15.0
       turbo:
         specifier: 'catalog:'
         version: 2.10.0
@@ -3615,6 +3621,12 @@ packages:
   picomatch@4.0.4:
     resolution: {integrity: sha512-QP88BAKvMam/3NxH6vj2o21R6MjxZUAd6nlwAS/pnGvN9IVLocLHxGYIzFhg6fUQ+5th6P4dv4eW9jX3DSIj7A==}
     engines: {node: '>=12'}
+
+  portless@0.15.0:
+    resolution: {integrity: sha512-GCrWz4GFPe4vbkGmDvXK78bGaKrVnIN2H6De3kAtoCfv1+CddaUaqPmA/hBzxQjGHbj+MpQMJEQ187tVqMtw2Q==}
+    engines: {node: '>=24'}
+    os: [darwin, linux, win32]
+    hasBin: true
 
   possible-typed-array-names@1.1.0:
     resolution: {integrity: sha512-/+5VFTchJDoVj3bhoqi6UeymcD00DAwb1nJwamzPvHEszJ4FpF6SNNbUbOS8yI56qHzdV8eK0qEfOSiodkTdxg==}
@@ -8121,6 +8133,8 @@ snapshots:
   picomatch@2.3.2: {}
 
   picomatch@4.0.4: {}
+
+  portless@0.15.0: {}
 
   possible-typed-array-names@1.1.0: {}
 

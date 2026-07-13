@@ -39,3 +39,4 @@ catalog:
   '@supabase/ssr': 0.12.0
   '@supabase/supabase-js': 2.108.2
   valibot: 1.4.1
+  portless: 0.15.0
