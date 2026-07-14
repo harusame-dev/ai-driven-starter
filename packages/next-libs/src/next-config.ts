@@ -5,5 +5,6 @@ export function getBaseConfig(): NextConfig {
     cacheComponents: true,
     poweredByHeader: false,
     typedRoutes: true,
+    allowedDevOrigins: ['*.localhost'],
   };
 }

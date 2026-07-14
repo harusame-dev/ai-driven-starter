@@ -19,8 +19,11 @@
 ## 主要コマンド
 
 ```bash
-pnpm dev:web              # supabase 立ち上げ、開発サーバー起動
-pnpm validate:check       # lint、フォーマット、デッドコード、スペル、型チェック、ビルド
+pnpm web:dev                  # supabase 立ち上げ、開発サーバー起動
+pnpm web:dev:portless         # worktree での並列開発用。supabase を worktree 専用ポート（.env）で立ち上げ、名前付き URL（https://web.ai-driven-starter.＜worktree名＞.localhost）で開発サーバー起動
+pnpm supabase:allocate-port   # .env の PUT_YOUR_SUPABASE_PORT_* に空きポートを割り当て。worktree 作成後に 1 回実行する
+pnpm supabase:stop            # この worktree の supabase を停止
+pnpm validate:check           # lint、フォーマット、デッドコード、スペル、型チェック、ビルド
 pnpm test:unit:web        #
 pnpm test:e2e:clean:web   # web アプリの e2e テスト。事前に DB のクリーンアップを行う
 ```
@@ -81,7 +84,7 @@ pnpm test:e2e:clean:web   # web アプリの e2e テスト。事前に DB のク
  - 実際に動作確認を行った際のスクリーンショット
  - 今回の作業中にエージェントが失敗した事や時間がかかった事など改善点
 - ローカルレビューの起動
-  - `difit --keep-alive --include-untracked --background .`
+  - `difit . --include-untracked`
 
 ## 参考ドキュメント
 

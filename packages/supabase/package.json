@@ -11,7 +11,8 @@
     "./nextjs/private-config": "./src/nextjs/private-config.ts"
   },
   "scripts": {
-    "dev": "SUPABASE_PROJECT=project_name_${WORKTREE_NAME} SUPABASE_API_PORT=${SUPABASE_API_PORT:-54321} SUPABASE_DB_PORT=${SUPABASE_DB_PORT:-54322} supabase start --workdir ..",
+    "dev": "SUPABASE_PROJECT=ai-driven-starter_${WORKTREE_NAME} supabase start",
+    "stop": "SUPABASE_PROJECT=ai-driven-starter_${WORKTREE_NAME} supabase stop",
     "typecheck": "tsc --noEmit"
   },
   "peerDependencies": {

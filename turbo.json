@@ -2,10 +2,6 @@
   "$schema": "https://turborepo.com/schema.json",
   "globalEnv": ["WORKTREE_NAME", "SUPABASE_DB_PORT", "SUPABASE_API_PORT"],
   "tasks": {
-    "dev:portless:web": {
-      "cache": false,
-      "persistent": true
-    },
     "dev:portless": {
       "dependsOn": ["^dev"],
       "cache": false,
@@ -17,6 +13,10 @@
       "persistent": true
     },
     "@packages/supabase#dev": {
+      "cache": false,
+      "persistent": false
+    },
+    "@packages/supabase#stop": {
       "cache": false,
       "persistent": false
     }
