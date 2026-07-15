@@ -3,7 +3,7 @@ paths:
   - ".github/workflows/**"
 ---
 
-# GitHub Action 実装ガイドライン
+# GitHub Action
 
 GitHub Actions ワークフローは以下のルールに従うこと。
 
