@@ -11,8 +11,8 @@
     "./nextjs/private-config": "./src/nextjs/private-config.ts"
   },
   "scripts": {
-    "dev": "SUPABASE_PROJECT=ai-driven-starter_${WORKTREE_NAME} supabase start",
-    "stop": "SUPABASE_PROJECT=ai-driven-starter_${WORKTREE_NAME} supabase stop",
+    "dev": "SUPABASE_PROJECT=ai-driven-starter_$(basename \"$(git rev-parse --show-toplevel)\") supabase start",
+    "stop": "SUPABASE_PROJECT=ai-driven-starter_$(basename \"$(git rev-parse --show-toplevel)\") supabase stop",
     "typecheck": "tsc --noEmit"
   },
   "peerDependencies": {
