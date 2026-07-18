@@ -1,6 +1,6 @@
 {
   "$schema": "https://turborepo.com/schema.json",
-  "globalEnv": ["WORKTREE_NAME", "SUPABASE_DB_PORT", "SUPABASE_API_PORT"],
+  "globalEnv": ["SUPABASE_DB_PORT", "SUPABASE_API_PORT"],
   "tasks": {
     "dev:portless": {
       "dependsOn": ["^dev"],
