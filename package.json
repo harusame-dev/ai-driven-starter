@@ -4,7 +4,6 @@
   "description": "",
   "scripts": {
     "web:dev": "turbo run dev --filter=@apps/web",
-    "web:dev:portless": "turbo run dev:portless --filter @apps/web",
     "supabase:stop": "turbo run stop --filter @packages/supabase",
     "supabase:allocate-port": "./scripts/allocate-supabase-port.sh",
     "test": "echo \"Error: no test specified\" && exit 1"

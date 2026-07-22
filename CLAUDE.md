@@ -19,8 +19,7 @@
 ## 主要コマンド
 
 ```bash
-pnpm web:dev                  # supabase 立ち上げ、開発サーバー起動
-pnpm web:dev:portless         # worktree での並列開発用。supabase を worktree 専用ポート（.env）で立ち上げ、名前付き URL（https://web.ai-driven-starter.＜worktree名＞.localhost）で開発サーバー起動
+pnpm web:dev                  # supabase 立ち上げ、開発サーバー起動（portless 経由。https://web.ai-driven-starter.＜checkout名＞.localhost:1355）
 pnpm supabase:allocate-port   # .env の PUT_YOUR_SUPABASE_PORT_* に空きポートを割り当て。worktree 作成後に 1 回実行する
 pnpm supabase:stop            # この worktree の supabase を停止
 pnpm validate:check           # lint、フォーマット、デッドコード、スペル、型チェック、ビルド
