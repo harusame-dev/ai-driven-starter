@@ -3,7 +3,7 @@ paths:
   - *.client.tsx
 ---
 
-# Client Component
+# Next.js Client Component
 
 ## Client Component の範囲を最小限に抑える
 

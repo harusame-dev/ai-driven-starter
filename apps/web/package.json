@@ -3,8 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "dev:portless": "portless web.ai-driven-starter.$(basename \"$(git rev-parse --show-toplevel)\") next dev",
+    "dev": "portless web.ai-driven-starter.$(../../scripts/worktree-host-name.sh) next dev",
     "build": "next build",
     "start": "next start",
     "lint": "eslint"

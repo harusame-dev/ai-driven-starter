@@ -3,7 +3,7 @@ paths:
   - "**/*.browser.test.tsx"
 ---
 
-# Test： Vitest ブラウザーモード
+# Test： Vitest ブラウザテスト
 
 ## `screen` の代わりに `page` を常に使用すること。
 
